@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1>Gujarati Alphabet</h1>
+	<style>
+		#alphabets button {
+			font-size: 8em;
+			height:200px;
+			width:200px;
+		}
+	</style>
+</head>	
+<body>
+	<audio id="player" >
+	  <source src="#" type="audio/wav">
+	</audio>
+	<div>
+		<button id="Letters" onclick="setMode('Letters')" disabled="true" >Letters</button>
+		<button id="Examples" onclick="setMode('Examples')">Example</button>
+		<button id="LetterWithExamples" onclick="setMode('LetterWithExamples')">Letter with Example</button>
+	</div>	
+	<hr/>
+	<div>
+		<img id="picture" src="./Pictures/caption.jpg" height="300px" />
+	</div>
+	<hr/>	
+	<div id="alphabets">
+		<button onclick="letterClicked('0A95')">ક</button>
+		<button onclick="letterClicked('0A96')">ખ</button>
+		<button onclick="letterClicked('0A97')">ગ</button>
+		<button onclick="letterClicked('0A98')">ઘ</button>
+		<button onclick="letterClicked('0A9A')">ચ</button>
+		<button onclick="letterClicked('0A9B')">છ</button>
+		<button onclick="letterClicked('0A9C')">જ</button>
+		<button onclick="letterClicked('0A9D')">ઝ</button>
+		<button onclick="letterClicked('0A9F')">ટ</button>
+		<button onclick="letterClicked('0AA0')">ઠ</button>
+		<button onclick="letterClicked('0AA1')">ડ</button>
+		<button onclick="letterClicked('0AA2')">ઢ</button>
+		<button onclick="letterClicked('0AA3')">ણ</button>
+		<button onclick="letterClicked('0AA4')">ત</button>
+		<button onclick="letterClicked('0AA5')">થ</button>
+		<button onclick="letterClicked('0AA6')">દ</button>
+		<button onclick="letterClicked('0AA7')">ધ</button>
+		<button onclick="letterClicked('0AA8')">ન</button>
+		<button onclick="letterClicked('0AAA')">પ</button>
+		<button onclick="letterClicked('0AAB')">ફ</button>
+		<button onclick="letterClicked('0AAC')">બ</button>
+		<button onclick="letterClicked('0AAD')">ભ</button>
+		<button onclick="letterClicked('0AAE')">મ</button>
+		<button onclick="letterClicked('0AAF')">ય</button>
+		<button onclick="letterClicked('0AB0')">ર</button>
+		<button onclick="letterClicked('0AB2')">લ</button>
+		<button onclick="letterClicked('0AB5')">વ</button>
+		<button onclick="letterClicked('0AB6')">શ</button>
+		<button onclick="letterClicked('0AB7')">ષ</button>
+		<button onclick="letterClicked('0AB8')">સ</button>
+		<button onclick="letterClicked('0AB9')">હ</button>
+		<button onclick="letterClicked('0AB3')">ળ</button>	
+		<button onclick="letterClicked('Xa')">ક્ષ</button>
+		<button onclick="letterClicked('Gya')">જ્ઞ</button>
+	</div>
+	<script>
+		var mode = "Letters";
+		function setMode(newMode) {
+			document.getElementById("Letters").disabled  = false;
+			document.getElementById("Examples").disabled  = false;
+			document.getElementById("LetterWithExamples").disabled  = false;
+			document.getElementById(newMode).disabled  = true;
+			mode = newMode;
+		}
+		function letterClicked(code) {
+			var picture = document.getElementById("picture");
+			var player = document.getElementById("player");
+			picture.src = "./Pictures/" + mode + "/" + code +".jpg"
+			player.src = "./Wavs/" + mode + "/" + code +".wav";
+			player.play();
+		}
+	</script>
+</body>
+</html>
