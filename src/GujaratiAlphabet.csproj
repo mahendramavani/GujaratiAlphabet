@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4D80A36-BB0B-4035-BFC7-1A15EDD633E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GujaratiAlphabet</RootNamespace>
+    <AssemblyName>GujaratiAlphabet</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmbeddedResource.cs" />
+    <Compile Include="Letter.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mode.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0A95.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0A95.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0A96.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0A97.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0A98.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0A9A.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0A9B.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0A9C.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0A9D.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0A9F.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AA0.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AA1.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AA2.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AA3.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AA4.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AA5.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AA6.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AA7.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AA8.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AAA.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AAB.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AAC.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AAD.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AAE.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AAF.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AB0.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AB2.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AB5.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AB6.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AB7.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AB8.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AB9.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\0AB3.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\Xa.jpg" />
+    <EmbeddedResource Include="Pictures\LetterWithExamples\Gya.jpg" />
+    <EmbeddedResource Include="Pictures\35rushi.jpg" />
+    <EmbeddedResource Include="Pictures\0.jpg" />
+    <EmbeddedResource Include="Pictures\1.jpg" />
+    <EmbeddedResource Include="Pictures\2.jpg" />
+    <EmbeddedResource Include="Pictures\3.jpg" />
+    <EmbeddedResource Include="Pictures\4.jpg" />
+    <EmbeddedResource Include="Pictures\5.jpg" />
+    <EmbeddedResource Include="Pictures\6.jpg" />
+    <EmbeddedResource Include="Pictures\7.jpg" />
+    <EmbeddedResource Include="Pictures\8.jpg" />
+    <EmbeddedResource Include="Pictures\9.jpg" />
+    <EmbeddedResource Include="Pictures\001Aa.jpg" />
+    <EmbeddedResource Include="Pictures\002Aaaa.jpg" />
+    <EmbeddedResource Include="Pictures\03EE.jpg" />
+    <EmbeddedResource Include="Pictures\04Es.jpg" />
+    <EmbeddedResource Include="Pictures\05Utarad.jpg" />
+    <EmbeddedResource Include="Pictures\06UUn.jpg" />
+    <EmbeddedResource Include="Pictures\08Aeroplanne.jpg" />
+    <EmbeddedResource Include="Pictures\09Airavat.jpg" />
+    <EmbeddedResource Include="Pictures\10Osiku.jpg" />
+    <EmbeddedResource Include="Pictures\11Osadh.jpg" />
+    <EmbeddedResource Include="Pictures\12Ambadi.jpg" />
+    <EmbeddedResource Include="Pictures\13Ah.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Wavs\Letters\0A95.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\ButtonCaptions\Gya.jpg" />
+    <EmbeddedResource Include="Pictures\ButtonCaptions\Xa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0A95.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0A96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0A97.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AB3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0A98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0A9A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0A9B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0A9C.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0A9D.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0A9F.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AA0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AA1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AA2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AA3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AA4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AA5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AA6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AA7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AA8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AAA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AAB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AAC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AAD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AAE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AAF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AB0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AB2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AB5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AB6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AB7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AB8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\0AB9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\Gya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Letters\Xa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pictures\Examples\0A95.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0A96.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0A97.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0A98.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0A9A.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0A9B.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0A9C.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0A9D.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0A9F.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AA0.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AA1.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AA2.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AA3.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AA4.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AA5.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AA6.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AA7.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AA8.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AAA.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AAB.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AAC.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AAD.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AAE.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AAF.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AB0.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AB2.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AB3.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AB5.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AB6.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AB7.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AB8.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\0AB9.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\Gya.jpg" />
+    <EmbeddedResource Include="Pictures\Examples\Xa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Wavs\StartupSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Wavs\Letters\0A96.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0A97.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0A98.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0A9A.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0A9B.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0A9C.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0A9D.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0A9F.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AA0.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AA1.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AA2.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AA3.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AA4.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AA5.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AA6.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AA7.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AA8.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AAA.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AAB.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AAC.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AAD.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AAE.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AAF.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AB0.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AB2.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AB3.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AB5.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AB6.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AB7.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AB8.wav" />
+    <EmbeddedResource Include="Wavs\Letters\0AB9.wav" />
+    <EmbeddedResource Include="Wavs\Letters\Gya.wav" />
+    <EmbeddedResource Include="Wavs\Letters\Xa.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0A96.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0A97.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0A98.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0A9A.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0A9B.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0A9C.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0A9D.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0A9F.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AA0.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AA1.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AA2.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AA3.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AA4.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AA5.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AA6.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AA7.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AA8.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AAA.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AAB.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AAC.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AAD.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AAE.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AAF.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AB0.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AB2.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AB3.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AB5.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AB6.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AB7.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AB8.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\0AB9.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\Gya.wav" />
+    <EmbeddedResource Include="Wavs\LetterWithExamples\Xa.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Wavs\Examples\0A95.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0A96.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0A97.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0A98.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0A9A.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0A9B.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0A9C.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0A9D.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0A9F.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AA0.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AA1.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AA2.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AA3.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AA4.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AA5.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AA6.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AA7.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AA8.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AAA.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AAB.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AAC.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AAD.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AAE.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AAF.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AB0.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AB2.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AB3.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AB5.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AB6.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AB7.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AB8.wav" />
+    <EmbeddedResource Include="Wavs\Examples\0AB9.wav" />
+    <EmbeddedResource Include="Wavs\Examples\Gya.wav" />
+    <EmbeddedResource Include="Wavs\Examples\Xa.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
